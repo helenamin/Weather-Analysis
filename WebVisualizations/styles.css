@@ -1,0 +1,126 @@
+/* used in template */
+body{
+    background-color: gray;
+}
+
+.makeHidden{
+    visibility: hidden;
+}
+
+.bg-lightgreen{
+    background-color: #709e8a ;
+}
+
+.navbar{
+    padding:0px;
+}
+
+.navbar-brand {
+    background-color: #709e8a;
+    font-weight:500;
+    padding-left:15px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.navbar-brand strong{
+    color:#f1f1f1;
+}
+
+.active{
+    background-color:rgb(200, 200, 200);
+}
+/* used in template */
+
+/* used in index */
+.bg-white{
+    background-color: white;
+}
+
+.row section{
+    margin-top:50px;
+    height:500px;
+
+}
+
+#main{
+    padding-top: 50px;
+    padding-left:40px;
+    padding-right: 40px;
+    padding:50px;
+    height:auto;
+}
+
+#side{
+    height:450px;
+    padding-top: 50px;
+    padding-left:25px;
+    padding-right: 25px;
+}
+
+.row section h1{
+        color: #709e8a;
+        padding-bottom: 30px;
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: bold;
+}
+
+.col-lg-8 section img{
+    float:left;
+    width:200px;
+    height:auto;
+}
+
+.col-lg-4 section img{
+    float:left;
+    width:150px;
+    height:150px;
+    padding:3px;
+}
+
+.lookselected img{
+    border:2px solid #709e8a;
+}
+
+
+/* used in index */
+/* Used in Comparison page */
+
+.col-lg-6 img{
+    float:left;
+    width:400px;
+    height:auto;
+}
+
+.bg-white h1{
+    color: #709e8a;
+    padding-bottom: 30px;
+    font-size: 35px;
+}
+
+.col-lg-6 a h2{
+    color: #709e8a;
+    padding-top: 30px;
+    font-size: 25px;
+    text-align: center;
+}
+
+#comparison-main {
+    padding: 50px;
+    padding-right: 100px;
+    margin:50px;
+}
+
+/* Used in Comparison page */
+/* Used in Data page */
+.bg-white h3{
+    color: #709e8a;
+    font-size: 25px;
+}
+/* Used in Data page */
+/* Used in plots pages */
+
+#plotsimg{
+    float: none;
+    width: 100%;
+    height:auto;
+}

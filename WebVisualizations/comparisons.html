@@ -18,10 +18,9 @@
     </button>
     <div class="collapse navbar-collapse bg-light"  id="navbarSupportedContent">
       <ul class="navbar-nav ml-auto">
-        <li class="nav-item active dropdown">
+        <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Plots
-            <span class="sr-only">(current)</span>
+            Plots            
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
             <a class="dropdown-item" href="maxtemp.html">Max Temperature</a>
@@ -30,8 +29,10 @@
             <a class="dropdown-item" href="windspeed.html">Wind Speed</a>
           </div>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="comparisons.html">Comparison</a>
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Comparison
+            <span class="sr-only">(current)</span>
+          </a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="data.html">Data</a>
@@ -40,39 +41,39 @@
   </nav>
 
   <div class="container">
-    <div class="row">
-      <div class="col-lg-8" >
-          <section class="bg-white" id="main">
-            <h1>Summary: Latitue vs. X</h1>
-            <p>
-              <a href="maxtemp.html">
-                <img alt="vs.Max Temperature" src="Resources/assets/images/Fig1.png">
-              </a>
-            The purpose of this project was to analyze how weather changes as you get closer to the equator. To accomploish this analysis, we fisrt pulled data from the OpenWeather Map API to assemble a dataset on over 500 cities.
-          </p>
-          <p>
-            After assembling the dataset, we used Matplotlib to plot varios aspects of the weather vs. latitude. Factors we looked at included: temperature, cloudiness, wind speed, and humidity. This site provides the source data and visualizations created as part of the analysis, as well as explanations and descriptions of any trends and correlations witnessed.
-          </p>
-          </section>
-      </div>
-      <div class="col-lg-4">
-          <section class="bg-white" id="side">
-            <h1>Visualization</h1>
+    <section class="bg-white" id="comparison-main">
+        <h1>Comparison: Latitude vs. X</h1>
+        <hr>
+        <p>Click any plot to get an in-depth analysis.</p>
+        <div class="row">
+          <div class="col-lg-6">
             <a href="maxtemp.html">
+              <h2>vs. Max Temperature</h2>
               <img alt="vs.Max Temperature" src="Resources/assets/images/Fig1.png">
             </a>
+          </div>
+          <div class="col-lg-6">
             <a href="humidity.html">
+              <h2>vs. Humidity</h2>
               <img alt="vs. Humidity" src="Resources/assets/images/Fig2.png">
             </a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-6">
             <a href="cloudiness.html">
-              <img alt="vs.Cloudiness" src="Resources/assets/images/Fig3.png">
+              <h2>vs. Cloudiness</h2>
+              <img alt="vs. Cloudiness" src="Resources/assets/images/Fig3.png">
             </a>
+          </div>
+          <div class="col-lg-6">
             <a href="windspeed.html">
+              <h2>vs. Wind Speed</h2>
               <img alt="vs. Wind Speed" src="Resources/assets/images/Fig4.png">
             </a>
-          </section>
-      </div>
-    </div>          
+          </div>
+        </div>
+    </section>      
   </div>
     
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>

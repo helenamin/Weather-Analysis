@@ -24,7 +24,9 @@
             <span class="sr-only">(current)</span>
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="maxtemp.html">Max Temperature</a>
+            <a class="dropdown-item active" href="maxtemp.html">Max Temperature
+              <span class="sr-only">(current)</span>
+            </a>
             <a class="dropdown-item" href="humidity.html">Humidity</a>
             <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
             <a class="dropdown-item" href="windspeed.html">Wind Speed</a>
@@ -43,26 +45,23 @@
     <div class="row">
       <div class="col-lg-8" >
           <section class="bg-white" id="main">
-            <h1>Summary: Latitue vs. X</h1>
-            <p>
+            <h1>Max Temperature</h1>
               <a href="maxtemp.html">
-                <img alt="vs.Max Temperature" src="Resources/assets/images/Fig1.png">
+                <img alt="vs.Max Temperature" src="Resources/assets/images/Fig1.png" id="plotsimg">
               </a>
-            The purpose of this project was to analyze how weather changes as you get closer to the equator. To accomploish this analysis, we fisrt pulled data from the OpenWeather Map API to assemble a dataset on over 500 cities.
-          </p>
-          <p>
-            After assembling the dataset, we used Matplotlib to plot varios aspects of the weather vs. latitude. Factors we looked at included: temperature, cloudiness, wind speed, and humidity. This site provides the source data and visualizations created as part of the analysis, as well as explanations and descriptions of any trends and correlations witnessed.
-          </p>
+            <p>
+              As expected, the weater becomes significatly warmer as one approaches the equator (0 Deg. Latitude). More interestingly, however, is the fact that the southern hemisphere tends to be warmer this time of year than the northern hemisphere. This may be due to the tilt of the earth at the time of the year this data was gathered.
+            </p>
           </section>
       </div>
       <div class="col-lg-4">
           <section class="bg-white" id="side">
             <h1>Visualization</h1>
-            <a href="maxtemp.html">
+            <a href="maxtemp.html" class="lookselected">
               <img alt="vs.Max Temperature" src="Resources/assets/images/Fig1.png">
             </a>
             <a href="humidity.html">
-              <img alt="vs. Humidity" src="Resources/assets/images/Fig2.png">
+              <img alt="vs.Humidity" src="Resources/assets/images/Fig2.png">
             </a>
             <a href="cloudiness.html">
               <img alt="vs.Cloudiness" src="Resources/assets/images/Fig3.png">
