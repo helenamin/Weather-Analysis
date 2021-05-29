@@ -3,22 +3,19 @@ body{
     background-color: rgb(221, 221, 221);
 }
 
-.makeHidden{
-    visibility: hidden;
+
+.navbar{
+    padding:0px; 
+    background-color: white;  
 }
 
 .bg-lightgreen{
-    background-color: #709e8a ;
-}
-
-.navbar{
-    padding:0px;
-}
-
-.navbar-brand {
     background-color: #709e8a;
+}
+
+.navbar-brand {    
     font-weight:500;
-    padding-left:15px;
+    padding:15px;
     font-family: 'Times New Roman', Times, serif;
 }
 
@@ -39,6 +36,18 @@ body{
     border:0px;
 }
 
+
+/* Here we define some styles that will ONLY be applied at screen sizes below 768 pixels (small and extra small screens) */
+@media (max-width: 768px) {
+    body{
+        background-color: white;
+    }
+
+    .navbar {
+        background-color: #709e8a; 
+    }
+}
+
 /* used in header.html */
 
 /* used in index */
@@ -48,12 +57,11 @@ body{
 
 .mainbox , .sidebox{
     margin-top: 10px;
+    margin-left: 0px;
+    margin-right: 0px;
 }
 
 #main{
-    padding-top: 50px;
-    padding-left:40px;
-    padding-right: 40px;
     padding:50px;
     height:auto;
 }
@@ -62,13 +70,13 @@ body{
     padding-top: 50px;
     padding-left:25px;
     padding-right: 25px;
-    height:450px;
+    height: 420px;
 }
 
 .row section h1{
-        color: #709e8a;
-        font-family: 'Times New Roman', Times, serif;
-        font-weight: bold;
+    color: #709e8a;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
 }
 
 .mainbox section img{
@@ -79,8 +87,8 @@ body{
 
 .sidebox section img{
     float:left;
-    width:140px;
-    height:140px;
+    width:120px;
+    height:120px;
     padding:3px;
 }
 
