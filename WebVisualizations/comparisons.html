@@ -10,35 +10,8 @@
 </head>
 
 <body>
-  <!-- navbar code -->
-  <nav class="navbar navbar-expand-lg navbar-light  bg-lightgreen">
-    <a class="navbar-brand bg-lightgreen" href="index.html"><strong>Latitude</strong></a>
-    <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse bg-light"  id="navbarSupportedContent">
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Plots            
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="maxtemp.html">Max Temperature</a>
-            <a class="dropdown-item" href="humidity.html">Humidity</a>
-            <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
-            <a class="dropdown-item" href="windspeed.html">Wind Speed</a>
-          </div>
-        </li>
-        <li class="nav-item active">
-          <a class="nav-link" href="#">Comparison
-            <span class="sr-only">(current)</span>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="data.html">Data</a>
-        </li>
-    </div>
-  </nav>
+
+  <iframe src="header.html" onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"></iframe>
 
   <div class="container">
     <section class="bg-white" id="comparison-main">
@@ -46,29 +19,29 @@
         <hr>
         <p>Click any plot to get an in-depth analysis.</p>
         <div class="row">
-          <div class="col-lg-6">
+          <div class="col-lg-6 col-md-6 comp-main">
             <a href="maxtemp.html">
-              <h2>vs. Max Temperature</h2>
+              <h1>vs. Max Temperature</h1>
               <img alt="vs.Max Temperature" src="Resources/assets/images/Fig1.png">
             </a>
           </div>
-          <div class="col-lg-6">
+          <div class="col-lg-6 col-md-6 comp-main">
             <a href="humidity.html">
-              <h2>vs. Humidity</h2>
+              <h1>vs. Humidity</h1>
               <img alt="vs. Humidity" src="Resources/assets/images/Fig2.png">
             </a>
           </div>
         </div>
         <div class="row">
-          <div class="col-lg-6">
+          <div class="col-lg-6 col-md-6 comp-main">
             <a href="cloudiness.html">
-              <h2>vs. Cloudiness</h2>
+              <h1>vs. Cloudiness</h1>
               <img alt="vs. Cloudiness" src="Resources/assets/images/Fig3.png">
             </a>
           </div>
-          <div class="col-lg-6">
+          <div class="col-lg-6 col-md-6 comp-main">
             <a href="windspeed.html">
-              <h2>vs. Wind Speed</h2>
+              <h1>vs. Wind Speed</h1>
               <img alt="vs. Wind Speed" src="Resources/assets/images/Fig4.png">
             </a>
           </div>

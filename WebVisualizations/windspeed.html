@@ -10,51 +10,23 @@
 </head>
 
 <body>
-  <!-- navbar code -->
-  <nav class="navbar navbar-expand-lg navbar-light  bg-lightgreen">
-    <a class="navbar-brand bg-lightgreen" href="index.html"><strong>Latitude</strong></a>
-    <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse bg-light"  id="navbarSupportedContent">
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item active dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Plots
-            <span class="sr-only">(current)</span>
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="maxtemp.html">Max Temperature</a>
-            <a class="dropdown-item" href="humidity.html">Humidity</a>
-            <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
-            <a class="dropdown-item active" href="windspeed.html">Wind Speed
-              <span class="sr-only">(current)</span>
-            </a>
-          </div>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="comparisons.html">Comparison</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="data.html">Data</a>
-        </li>
-    </div>
-  </nav>
+  
+  <iframe src="header.html" onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"></iframe>
 
   <div class="container">
     <div class="row">
-      <div class="col-lg-8" >
+      <div class="col-xl-8 col-lg-7 col-md-12 col-sm-12 col-xs-12 mainbox" >
           <section class="bg-white" id="main">
             <h1>Wind Speed</h1>
               <a href="windspeed.html">
-                <img alt="vs. Wind Speed" src="Resources/assets/images/Fig2.png" id="plotsimg">
+                <img alt="vs. Wind Speed" src="Resources/assets/images/Fig4.png" id="plotsimg">
               </a>
             <p>
-              As expected, the weater becomes significatly warmer as one approaches the equator (0 Deg. Latitude). More interestingly, however, is the fact that the southern hemisphere tends to be warmer this time of year than the northern hemisphere. This may be due to the tilt of the earth at the time of the year this data was gathered.
+              No obvious relationship found between wind speed and latitude of the cities. During the observation, the strongest winds observed close to latitude:+40 but can be changed in time for sure.
             </p>
           </section>
       </div>
-      <div class="col-lg-4">
+      <div class="col-xl-4 col-lg-5 col-md-12 col-sm-12 col-xs-12 sidebox">
           <section class="bg-white" id="side">
             <h1>Visualization</h1>
             <a href="maxtemp.html">

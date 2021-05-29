@@ -1,6 +1,6 @@
-/* used in template */
+/* used in header.html */
 body{
-    background-color: gray;
+    background-color: rgb(221, 221, 221);
 }
 
 .makeHidden{
@@ -27,19 +27,27 @@ body{
 }
 
 .active{
-    background-color:rgb(200, 200, 200);
+    background-color: rgb(241, 241, 241);
 }
-/* used in template */
+
+.navbar-nav{
+    padding:10px;
+}
+
+.dropdown-menu{
+    padding: 10px;
+    border:0px;
+}
+
+/* used in header.html */
 
 /* used in index */
 .bg-white{
     background-color: white;
 }
 
-.row section{
-    margin-top:50px;
-    height:500px;
-
+.mainbox , .sidebox{
+    margin-top: 10px;
 }
 
 #main{
@@ -51,29 +59,28 @@ body{
 }
 
 #side{
-    height:450px;
     padding-top: 50px;
     padding-left:25px;
     padding-right: 25px;
+    height:450px;
 }
 
 .row section h1{
         color: #709e8a;
-        padding-bottom: 30px;
         font-family: 'Times New Roman', Times, serif;
         font-weight: bold;
 }
 
-.col-lg-8 section img{
+.mainbox section img{
     float:left;
     width:200px;
     height:auto;
 }
 
-.col-lg-4 section img{
+.sidebox section img{
     float:left;
-    width:150px;
-    height:150px;
+    width:140px;
+    height:140px;
     padding:3px;
 }
 
@@ -85,9 +92,9 @@ body{
 /* used in index */
 /* Used in Comparison page */
 
-.col-lg-6 img{
+.comp-main img{
     float:left;
-    width:400px;
+    width:100%;
     height:auto;
 }
 
@@ -95,32 +102,67 @@ body{
     color: #709e8a;
     padding-bottom: 30px;
     font-size: 35px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
 }
 
-.col-lg-6 a h2{
+.comp-main a h1{
     color: #709e8a;
     padding-top: 30px;
-    font-size: 25px;
+    font-size: 120%;
     text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
 }
 
 #comparison-main {
     padding: 50px;
     padding-right: 100px;
-    margin:50px;
+    margin:10px;
 }
 
 /* Used in Comparison page */
 /* Used in Data page */
 .bg-white h3{
+
     color: #709e8a;
-    font-size: 25px;
+    font-size: 25px;}
+
+.data-main{
+    overflow: hidden;
 }
+
+th{
+    
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+  
+th, td {
+    text-align: left;
+    padding: 10px;
+}
+  
+tr:nth-child(even) {
+      background-color: #f2f2f2;
+}
+
+#data-main-section{
+    padding: 50px;
+    margin:10px;
+}
+
 /* Used in Data page */
 /* Used in plots pages */
 
 #plotsimg{
-    float: none;
+    align-content: center;
     width: 100%;
     height:auto;
 }
+
