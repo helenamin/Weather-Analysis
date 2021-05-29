@@ -11,7 +11,7 @@ In building this dashboard, there are individual pages for each plot and a navig
     1. An explanation of the project.
     2. Links to each visualizations page. There should be a sidebar containing preview images of each plot, and clicking an image should take the user to that visualization.
 
-    ![LandingPage](Images/LandingResize-Helen.png)
+    ![LandingPage](Images/landingResize-Helen.png)
 
 *  Visualization pages, each with:
 
